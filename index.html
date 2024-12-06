@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+        <title>New Found Tab :)</title>
+        
+        
+        
+        
+
+        </head>
+<body>
+    <h1>Tractor sprayers are commonly used to spray fertilizers and pesticides over long rows of plants. However, many times the sprayer control system on the tractors is very basic. It is very common to see ball valves being turned on and off by an operator to control the spray. The manual ball valve control method is very inefficient and frequently leads to operator fatigue and possibly repetitive injury. To improve the usability of sprayers a control system that can be programmed would be a tremendous improvement. The image shown below is a design that I created using an electrical box.</h1>
+    <img src="images/IMG_3925.avif" alt="tractor sprayer"/><br><br>
+    <h1>The electrical box contains a set of circuitry that is controlled by a Raspberry Pico. The image shown below is the complex wiring. note how messy it looks; this is why wiring harness are a great idea.</h1><br><br>
+    <img src="images/IMG_3928.avif" alt="wiring"/><br><br>
+    <h1>After assembling the various circuits together and affixing the buttons to the panel, I created some labels to help the operator identify the purpose of each button. The labels are shown below in the following image.</h1><br><br>
+    <img src="images/Tractor Controls.avif" alt="labels"/><br><br>
+    <h1>This project is in progress and will likely be finished over the next few weeks. Stay tuned for the implementation on a real-life tractor.</h1><br><br>
+    <img src="images/image4.avif" alt="tractor"/><br><br>
+    
+            <button id = "nacho_button" onclick = "firstFunction()">Do not click this button!</button>
+    <br>
+               
+    <h1 id ="message"> </h1>
+        
+       <script>
+           let a = 0;
+       </script>
+       
+    <style>
+        body {background-color: green; text-align: center;}
+    </style>   
+    
+        
+         <script>
+             function firstFunction() {
+                if (a ==0){
+                alert("stop clicking me");
+                    }
+                 if (a ==1){
+                alert("seriously stop");
+                    }
+                 if (a ==2){
+                alert("...........I was not kidding!!!! Stop clicking ME!!!!");
+                    }
+                 if (a ==3){
+                alert("You people have some nerve thinking you can just click buttons like you own the place!!! Well you don't!! This is my button and I will not tolerate you clicking it anymore!");
+                 nacho_button.style.display = 'none';
+                    }
+                a=a+1
+                                
+            }
+                 
+    
+    
+            
+          </script>       
+        
+        
+        
+        
+        
+    </body>
+</html>
