@@ -11,10 +11,8 @@
     <h1>Tractor sprayers are commonly used to spray fertilizers and pesticides over long rows of plants. However, typical sprayer control systems on tractors are very basic. It is very common to see ball valves being turned on and off by an operator to control the spray. The manual ball valve control method is very inefficient and frequently leads to operator fatigue and possibly repetitive injury. To improve the usability of sprayers a control system that can be programmed would be a tremendous improvement. The image shown below is a automated sprayer controller design that I created.</h1>
     <img src="../images/IMG_3925.avif" alt="tractor sprayer"/><br><br>
     <h1>The automated sprayer will need to be controlled by a micro controller. For this project, the Raspberry Pi Pico has been selected. The Pico needs to have a voltage source, so a 7.4 volt battery was selected. However, 7.4 volts is too high, so step down converters were used to bring the voltage down to 5V. It should be noted that the step down converters being used are noisy, so capacitors have been added to the output of the step down converters. After finishing the power supply for the system, a simple code (shared at the bottom of the website) was written that could run a 4 digit 7 segment display. The display utilized 330 Ohm resistors to connect to ground. Shown below is a video of the raspberry pi controlling the display that will soon be implemented into the control box. It should be noted that after turning on the pico, my initials show for a small period of time before showing setting numbers. </h1>
-    <video controls width="600" height="400" loop>
-        <source src="../images/IMG_2989.MOV" type="video/mp4"/>
-        Try a different browser for this video element.
-    </video>
+    <iframe width="600" height ="400" src="https://www.youtube.com/shorts/TTfuS6nuY6Q?si=QUAp87gEPdiAtlg1" allowfullscreen>
+    </iframe>
     <h1>After getting the display and power supply functional, the next task was to create a housing for the setup. Shown below by the two images is the custom built face plate of the housing.</h1>
     <img width ="600" height="600" src="../images/img_01.jpg" alt="face plate"/><br><br>
     <img width ="600" height="600" src="../images/ts1.jpg" alt="face plate"/><br><br>
@@ -23,15 +21,12 @@
     <h1>After assembling the various circuits together and affixing the buttons to the panel, I created some labels to help the operator identify the purpose of each button. The labels are shown below in the following image.</h1><br><br>
     <img src="../images/Tractor Controls.avif" alt="labels"/><br><br>
     <h1>The setup is now wired and the Pico has been programmed. To ensure everything has been done correctly, the setup buttons and display was tested. Shown below is a video of the testing.</h1>
-    <video controls width="600" height="400" loop>
-        <source src="../images/mov31.MOV" type="video/mp4"/>
-        Try a different browser for this video element.
-    </video>
+    <iframe width="600" height="400" src="https://youtube.com/shorts/WswGd1S9DTs?si=o3-___wiSvZuBBt" allowfullscreen>
+    </iframe>
     <h1>With the display and buttons working, it is now time to wire the sensors and the solenoid valve. Shown below is a video of the sensor and solenoid valve being tested after wiring. It should be noted that a flyback diode is necessary since the solenoid acts as an inductive load and may lead to voltage spikes that can potential damage the PICO when used without the diode. (For those trying to copy the design, you have been warned by a professional board burner not to use the PICO with inductive loads without a flyback diode) </h1>
-    <video controls width="600" height="400" loop>
-        <source src="../images/movtest.MOV" type="video/mp4"/>
-        Try a different browser for this video element.
-    </video>
+    <iframe controls width="600" height="400" src="https://youtu.be/UBP4ezcAy4M?si=y_jxG6k_EkqvwV5P" allowfullscreen>
+
+    </iframe>
     <h1>This project is in progress and will likely be finished over the next few weeks. Stay tuned for the implementation on a real-life tractor.</h1><br><br>
     <img src="../images/image4.avif" alt="tractor"/><br><br>
     
